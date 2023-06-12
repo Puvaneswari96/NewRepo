@@ -704,7 +704,11 @@ import subprocess
 # Install or upgrade scikit-learn
 subprocess.check_call(['pip', 'install', '-U', 'scikit-learn'])
 
-!pip install matplotlib
+import subprocess
+
+# Install matplotlib using pip
+subprocess.call(['pip', 'install', 'matplotlib'])
+
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1055,7 +1059,11 @@ reviews_df['score'] = reviews_df['score'].map(encoded_class)
 
 """#### Text Cleaning & Processing"""
 
-!pip install nltk
+import subprocess
+
+# Install nltk using pip
+subprocess.call(['pip', 'install', 'nltk'])
+
 
 import nltk
 
