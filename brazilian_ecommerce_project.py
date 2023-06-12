@@ -701,11 +701,6 @@ print(sklearn.__version__)
 
 !pip install -U scikit-learn
 
-import subprocess
-
-# Install or upgrade scikit-learn
-subprocess.check_call(['pip', 'install', '-U', 'scikit-learn'])
-
 !pip install matplotlib
 
 import numpy as np
