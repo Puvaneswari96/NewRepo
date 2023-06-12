@@ -73,7 +73,7 @@ import subprocess
 package_name = "matplotlib"
 
 # Use subprocess to run the pip install command
-subprocess.check_call(["pip", "install", package_name])
+subprocess.check_call(["pip", "install", "matplotlib"])
 
 import subprocess
 
