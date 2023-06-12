@@ -75,12 +75,18 @@ package_name = "matplotlib"
 # Use subprocess to run the pip install command
 subprocess.check_call(["pip", "install", package_name])
 
+import subprocess
+
+package_name= "seaborn"
+
+subprocess.run(["pip", "install", "seaborn"])
+
 
 # Commented out IPython magic to ensure Python compatibility.
 import pandas as pd
 import numpy as np
 #import matplotlib.pyplot as plt
-import seaborn as sns
+#import seaborn as sns
 # %matplotlib inline
 
 """### Read All Files"""
