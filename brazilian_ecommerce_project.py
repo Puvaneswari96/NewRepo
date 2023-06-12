@@ -264,7 +264,7 @@ else:
 
 df['order_purchase_timestamp'] = pd.to_datetime(df['order_purchase_timestamp'])
 df['order_delivered_customer_date'] = pd.to_datetime(df['order_delivered_customer_date'])
-df['order_estimated_delivery_date'] = pd.to_datetime(df['order_estimated_delivery_date'])
+df['order_estimated_delivery_date'].dt.date
 df['shipping_limit_date'] = pd.to_datetime(df['shipping_limit_date'])
 df['order_delivered_carrier_date'] =pd.to_datetime(df['order_delivered_carrier_date'])
 
