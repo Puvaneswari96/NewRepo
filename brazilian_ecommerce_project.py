@@ -97,7 +97,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
         print(os.path.join(dirname, filename))
 
 customers_df= pd.read_csv('olist_customers_dataset.csv')
-geolocation_df= pd.read_csv('olist_geolocation_dataset.csv')
+geolocation_df = pd.read_csv('olist_geolocation_dataset.txt', delimiter='\t')
 items_df= pd.read_csv('olist_order_items_dataset.csv')
 payments_df= pd.read_csv('olist_order_payments_dataset.csv')
 reviews_df= pd.read_csv('olist_order_reviews_dataset.csv')
