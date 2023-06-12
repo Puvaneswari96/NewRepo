@@ -67,6 +67,8 @@ Original file is located at
 # 2.0 Data Loading
 """
 
+!sudo apt-get install python3-pip
+
 import subprocess
 
 # Define the package name
