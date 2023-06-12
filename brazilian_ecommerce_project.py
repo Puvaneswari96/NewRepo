@@ -65,8 +65,6 @@ Original file is located at
 <iframe width="1042" height="586" src="https://www.youtube.com/embed/O2nNUcj35ik" title="E-commerce Project Deloyment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # 2.0 Data Loading
-"""
-​
 
 import subprocess
 
@@ -96,6 +94,11 @@ import os
 for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
+
+import subprocess
+
+subprocess.check_call(["pip", "install", "pandas"])
+
 
 customers_df= pd.read_csv('olist_customers_dataset.csv')
 geolocation_df = pd.read_csv('olist_geolocation_dataset.csv')
