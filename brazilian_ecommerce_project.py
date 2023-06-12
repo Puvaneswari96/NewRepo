@@ -1645,7 +1645,7 @@ subprocess.call(['pip', 'install', 'streamlit'])
 #     if __name__ == '__main__':
 #         main()
 
-! streamlit run Brazilian_Ecommerce_Project.py
+#! streamlit run Brazilian_Ecommerce_Project.py
 
 
 
