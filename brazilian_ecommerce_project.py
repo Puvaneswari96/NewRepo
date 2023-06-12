@@ -67,6 +67,15 @@ Original file is located at
 # 2.0 Data Loading
 """
 
+import subprocess
+
+# Define the package name
+package_name = "matplotlib"
+
+# Use subprocess to run the pip install command
+subprocess.check_call(["pip", "install", package_name])
+
+
 # Commented out IPython magic to ensure Python compatibility.
 import pandas as pd
 import numpy as np
