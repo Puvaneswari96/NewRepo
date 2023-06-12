@@ -699,7 +699,10 @@ x_train_resampled, y_train_resampled = smote.fit_resample(x_train_scaled, y_trai
 import sklearn
 print(sklearn.__version__)
 
-!pip install -U scikit-learn
+import subprocess
+
+# Install or upgrade scikit-learn
+subprocess.check_call(['pip', 'install', '-U', 'scikit-learn'])
 
 !pip install matplotlib
 
