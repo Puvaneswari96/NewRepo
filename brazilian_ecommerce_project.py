@@ -66,9 +66,6 @@ Original file is located at
 
 # 2.0 Data Loading
 """
-
-import subprocess
-subprocess.run(["sudo", "apt-get", "install", "python3-pip"])
 ​
 
 import subprocess
