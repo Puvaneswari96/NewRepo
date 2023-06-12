@@ -967,7 +967,11 @@ plt.xticks(np.arange(len(np.unique(y_test))), np.unique(y_test))
 plt.yticks(np.arange(len(np.unique(y_test))), np.unique(y_test))
 plt.show()
 
-! pip install catboost
+import subprocess
+
+# Install catboost using pip
+subprocess.call(['pip', 'install', 'catboost'])
+
 
 """# 7.0 Pipeline"""
 
@@ -1191,7 +1195,10 @@ for i in [0, 2]:
 rfm_table.drop(outlier_indices[0][:], inplace= True)
 rfm_table.reset_index(inplace= True, drop= True)
 
-! pip install squarify
+import subprocess
+
+# Install squarify using pip
+subprocess.call(['pip', 'install', 'squarify'])
 
 """#### Customer Segmentation Grid"""
 
@@ -1411,9 +1418,17 @@ model_clustering.predict(pd.DataFrame({'freight_value' :[10], 'price' :[90], 'pa
 
 # Install neccessary libraries for deployment
 
-! pip install ydata_profiling
-! pip install streamlit_pandas_profiling
-! pip install streamlit
+import subprocess
+
+# Install ydata_profiling
+subprocess.call(['pip', 'install', 'ydata_profiling'])
+
+# Install streamlit_pandas_profiling
+subprocess.call(['pip', 'install', 'streamlit_pandas_profiling'])
+
+# Install streamlit
+subprocess.call(['pip', 'install', 'streamlit'])
+
 
 """### Deployment with Streamlit"""
 
