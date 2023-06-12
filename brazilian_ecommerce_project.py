@@ -79,7 +79,7 @@ subprocess.check_call(["pip", "install", package_name])
 # Commented out IPython magic to ensure Python compatibility.
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import seaborn as sns
 # %matplotlib inline
 
