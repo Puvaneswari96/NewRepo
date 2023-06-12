@@ -65,6 +65,8 @@ Original file is located at
 <iframe width="1042" height="586" src="https://www.youtube.com/embed/O2nNUcj35ik" title="E-commerce Project Deloyment" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # 2.0 Data Loading
+"""
+​
 
 import subprocess
 
