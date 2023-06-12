@@ -241,13 +241,25 @@ df['product_vol_cm3'] = df.product_length_cm * df.product_width_cm * df.product_
 df.drop(['product_length_cm', 'product_width_cm', 'product_height_cm'], axis= 1, inplace= True)
 
 """#### Convert Datetime features from Object to Datetime"""
+
 import subprocess
 
-# Define the Python code snippet
-python_code = "import pandas as pd"
+# Define the command to run the Python script
+command = ['python', '-c', 'import pandas as pd; print(pd.__version__)']
 
-# Execute the code using subprocess
-subprocess.run(["python", "-c", python_code])
+# Execute the command
+result = subprocess.run(command, capture_output=True, text=True)
+
+# Check the output and any potential errors
+if result.returncode == 0:
+    # Successful execution
+    output = result.stdout.strip()
+    print("Pandas imported successfully.")
+else:
+    # Error occurred
+    error = result.stderr.strip()
+    print(f"Error while importing pandas: {error}")
+
 
 
 df['order_purchase_timestamp'] = pd.to_datetime(df['order_purchase_timestamp'])
